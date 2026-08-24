@@ -25,7 +25,7 @@ telemetry into the training pipeline closes it.
 
 | File | Description |
 |---|---|
-| `project_corrected.ipynb` | Full pipeline - preprocessing, threat intelligence, ML training and evaluation |
+| `project implementation.ipynb` | Full pipeline - preprocessing, threat intelligence, ML training and evaluation |
 | `demo_app.py` | Streamlit prevention decision interface |
 | `demo_model.joblib` | Trained CSIC classifier (Classifier 1) |
 | `demo_vectorizer.joblib` | TF-IDF vectoriser for Classifier 1 |
