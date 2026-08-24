@@ -12,12 +12,21 @@ live cloud infrastructure to capture real cyber attacks, analyse
 attacker behaviour, and apply machine learning to classify attacks 
 and inform a prevention decision.
 
-The system addresses a real operational challenge facing organisations 
+This project addresses a real operational challenge facing organisations 
 today: intrusion detection systems trained on historical academic 
 benchmarks develop blind spots for the attack types that threat actors 
-are actively deploying against production infrastructure. This project 
-quantifies that gap and demonstrates how incorporating live honeypot 
-telemetry into the training pipeline closes it.
+are actively deploying against production infrastructure. To quantify 
+this gap, a Random Forest classifier was trained on the CSIC 2010 HTTP 
+benchmark dataset and evaluated against 397 live web attacks captured 
+by the deployed honeypot - demonstrating that a classifier achieving 
+97% accuracy on the benchmark failed to assign the correct attack-type 
+label to a single live request. A second classifier was then trained on 
+a combined dataset of CSIC 2010 and honeypot-captured attacks labelled 
+across five classes - Normal, SQL Injection, Cross-Site Scripting, 
+Remote Code Execution, and Secret Harvest - using TF-IDF character 
+n-gram feature extraction and a confidence-thresholded prevention 
+decision layer that automatically blocks, flags for review, or allows 
+each request based on the model output.
 
 ---
 
