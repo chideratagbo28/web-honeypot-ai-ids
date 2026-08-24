@@ -1,0 +1,34 @@
+[
+  {
+    "label": "Normal",
+    "request": "http://localhost:8080/tienda1/miembros/fotos.jsp HTTP/1.1 "
+  },
+  {
+    "label": "Secret-Harvest",
+    "request": "/.env.production.php "
+  },
+  {
+    "label": "Normal",
+    "request": "http://localhost:8080/tienda1/publico/miembros.jsp HTTP/1.1 "
+  },
+  {
+    "label": "XSS",
+    "request": "http://localhost:8080/tienda1/publico/pagar.jsp HTTP/1.1 modo=insertar<SCRIPT>alert(\"Paros\");</SCRIPT>&precio=1700&B1=Pa"
+  },
+  {
+    "label": "SQLi",
+    "request": "http://localhost:8080/tienda1/publico/vaciar.jsp?B2=Vaciar+carrito','0');waitfor+delay+'0:0:15';-- HTTP/1.1 "
+  },
+  {
+    "label": "RCE",
+    "request": "/ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php "
+  },
+  {
+    "label": "Secret-Harvest",
+    "request": "/backend/.env.production "
+  },
+  {
+    "label": "RCE",
+    "request": "/workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php "
+  }
+]
