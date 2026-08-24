@@ -25,15 +25,15 @@ telemetry into the training pipeline closes it.
 
 | File | Description |
 |---|---|
-| `project_corrected.ipynb` | Full pipeline — preprocessing, threat intelligence, ML training and evaluation |
+| `project_corrected.ipynb` | Full pipeline - preprocessing, threat intelligence, ML training and evaluation |
 | `demo_app.py` | Streamlit prevention decision interface |
 | `demo_model.joblib` | Trained CSIC classifier (Classifier 1) |
 | `demo_vectorizer.joblib` | TF-IDF vectoriser for Classifier 1 |
 | `demo_examples.json` | Real held-out attack samples for the demo |
 | `combined_5class_model.joblib` | Combined 5-class classifier (Classifier 2) |
 | `combined_5class_vectorizer.joblib` | TF-IDF vectoriser for Classifier 2 |
-| `honeypot_clean.csv` | Cleaned dataset — 108,515 records, 18 features |
-| `fig_*.png` | Report figures — confusion matrices and threat intelligence charts |
+| `honeypot_clean.csv` | Cleaned dataset - 108,515 records, 18 features |
+| `fig_*.png` | Report figures - confusion matrices and threat intelligence charts |
 
 ---
 
